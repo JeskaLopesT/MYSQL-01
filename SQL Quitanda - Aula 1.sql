@@ -23,7 +23,7 @@ CREATE TABLE tb_produtos(
 -- comando que trás todos os dados da tabela de produtos
 SELECT * FROM tb_produtos;
 
--- inserção de dados na tabela produto
+-- inserção de dados na tabela de produtos
 INSERT INTO tb_produtos(nome_produto, preco) 
 VALUES ("Banana", 5.00),("Mexirica", 7.00);
 
@@ -31,7 +31,7 @@ VALUES ("Banana", 5.00),("Mexirica", 7.00);
 SET SQL_SAFE_UPDATES = 0;
 
 -- atualização de um dado dentro da minha tabela
-UPDATE tb_produtos SET preco = 7.90;
+UPDATE tb_produtos SET preco = 7.90 WHERE id=2;
 
 
 
